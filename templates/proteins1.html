@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1 {
+    font-size: 40px;
+	font-style:sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+	font-style:sans-serif;
+}
+
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+  position: relative;
+  width: 45%; 
+  margin-left: auto;
+        margin-right: auto;
+
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+ img {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+     
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-style:sans-serif;
+  position:relative;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  }
+</style>
+</head>
+<body bgcolor="F9F3F3">
+
+
+
+
+<!--
+
+
+
+<div class="logo">
+  <a href="#logo">Healthkraft</a>
+  </div>
+<div class="navbar">
+<a href="login_new.html">Login</a>
+<a href="#signup">Sign In</a>  
+  <div class="dropdown">
+    <button class="dropbtn">Healthy Diet
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="atkins.html">Atkins</a>
+      <a href="#keto">Keto</a>
+      <a href="#vegan">Vegan</a>
+	</div>
+</div>
+<a href="#eating well">Food Essentials</a>
+<a href="#news">Nutrition Calculators </a>
+<div class="dropdown">
+    <button class="dropbtn">Health Recipe
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="salads.html">Salad</a>
+      <a href="soups.html">Soups</a>
+      <a href="smoothies.html">Smoothies</a>
+	</div>
+</div>
+<a href="#home">Home</a>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+<h1><center><font size=32 style="sans-serif">PROTEINS</font></center></h1>
+
+
+<p><font size="4.5" style="sans-serif">Protein makes up the building blocks of organs, muscles, skin, hormones and pretty much everything  in your body.
+ For this reason, you should eat high-quality protein at every meal.
+Studies show that this improves health in various ways, such as helping you lose weight and belly fat, while increasing your muscle mass and strength.
+A diet high in protein also lowers blood pressure, fights diabetes and more health and fitness experts believe that we need good amount of protein in our diet.
+  The recommended daily intake (RDI) for protein is 46 grams for women and 56 grams for men.</font></p>
+  
+  
+
+  
+  
+
+<h2>PROTEINS CONTAINING FOODS<h2>
+<h2><center>EGGS</center></h2>
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/eggs.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text"><h3><center>Eggs</center></h3>
+<p>Eggs are an excellent source of protein and are good value for money too. One large eggs contains, on average, 6g of protein and comes packed with essential nutrients.</p>
+
+
+</div>
+  </div>
+</div>
+<h2><center>FISH</center></h2>
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/fish.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Fish</center></h3>
+<p>Fish is an excellent source of lean protein and comes with a wealth of health benefits. Salmon contains about 22 grams of protein in a three ounce portion, so add it to your shopping list.
+</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>QUINOA</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/qui.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Quinoa</center></h3>
+<p>Quinoa contains more than eight grams of protein per cup and can rival some meats for protein power. Packed with all the essential amino acids, quinoa is also versatile and can be added to everything from soups to salad.
+</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>CHICKPEAS</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/chickpeas.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Chickpeas</center></h3>
+<p>Chickpeas are low in fat and high in protein, making them a great addition to your diet. The amount of protein in chickpeas is similar to eggs, which contain 6-7g per egg, so add it to your salads, stews and curry.
+
+</div>
+  </div>
+</div>
+
+
+<h2><center>COTTAGE CHEESE</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/cheese.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text"><h3>
+<h3><center>Cottage cheese</center></h3>
+<p>Cottage cheese packs 11g of protein per 100g serving and it's super versatile, so pair it with crackers or carrot sticks for the perfect protein fix.
+</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>BEANS</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/beans.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Beans</center></h3>
+<p>Beans are a great source of protein, but plant-based protein sources like beans and nuts are not complete proteins as they don't contain all the essential amino acids. They must be combined with grains and other protein sources throughout the day to ensure all needs are met.
+</p>
+
+
+</div>
+  </div>
+</div>
+<h2><center>SOY</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/soya.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Soy-based products</center></h3>
+<p>Soya products like soya yogurt, tofu and soya based meat alternatives are a great source of protein and can help with reducing the amount of fat in the diet if used in place of meat.
+</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>MILK</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/milk.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Milk</center></h3>
+<p>Skimmed milk is an excellent source of protein for encouraging muscle growth. Alternatively, soy milk provides around seven grams of protein and contains all the essential amino acids, making it a complete source. 
+</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>PEANUT BUTTER</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/peanut.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Peanut butter</center></h3>
+<p>Nut butter is high in protein, potassium, and fibre, making it a healthy but tasty snack. Nut butters on toast will offer complete proteins by combining grains and nuts. 
+</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>BUCKWHEAT</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/buckwheat.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Buckwheat</center></h3>
+<p>Buckwheat is packed with protein and is also gluten-free, so a good option for people who are gluten-intolerant.</p
+>
+
+</div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

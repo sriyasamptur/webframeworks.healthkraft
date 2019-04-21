@@ -1,0 +1,69 @@
+{% load static %}
+<html>
+<title>Smoothies</title>
+<head>
+<style>
+img {
+    /*background-image: url("pic1.jp2");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    width: 100%;
+    height: 100%; 
+}
+.smoothie {
+  background-color: pink;
+  text-align: center;
+  font-family: zapfino;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 20px/1.8 "Lato", sans-serif;
+}
+</style>
+</head>
+<body>
+  <div class="bg1"><img src="{% static 'healthkraft/images/smoothie.jpg' %}"> </div>
+  <div class="smoothie">
+    <h2 style="font-family: Garamond; font-style: italic; font-size:40px">STRAWBERRY SMOOTHIE</h2>
+    <p style="font-family: Garamond; font-style: italic; font-size:25px"> Strawberries contain healthy amounts of fiber, vitamin C, thiamin, folate and antioxidants. 
+        They also can lower blood pressure in people with hypertension and help improve cardiovascular health.</p>
+      <p style="font-family: Garamond; font-style: italic; font-size:25px"> <strong>Ingredients</strong> </p>
+       
+          <li style="font-family: Garamond; font-style: italic; font-size:25px">1/2 cups almond milk, unsweetened</li> 
+           <li style="font-family: Garamond; font-style: italic; font-size:25px">2 cups frozen strawberries</li>
+           <li style="font-family: Garamond; font-style: italic; font-size:25px">1 large ripe banana pieces</li>
+           <li style="font-family: Garamond; font-style: italic; font-size:25px">2 tbsp chia seeds or flaxseed</li> <br>
+
+           <blockquote style="font-family: Garamond; font-style: italic; font-size:25px"> <strong>Directions</strong>
+
+            In a powerful blender, add almond milk, strawberries, banana and flaxseed in the exact order.
+            Blend until smooth. Serve within a few hours.
+            Notes
+Use any milk.
+
+Because of flaxseed (chia) strawberry smoothie holds its consistency well for hours, making it perfect for a brunch.
+              </blockquote>
+
+              <table style="font-family: Garamond; font-style: italic; font-size:25px"> <caption><strong> Nutrition facts</strong></caption>
+                <tr>
+                  <th alignment="left">Per Serving: </th>
+                  <th>180 calories </th>
+                </tr>
+                <tr>
+                  <td> Fat: </td>
+                  <td> 5.5g</td>
+                </tr>
+                <tr> 
+                <td>Carbohydrates: </td>
+                <td>32g</td>
+                </tr>
+                <tr> 
+                        <td>Protein: </td>
+                        <td>3.8g</td>
+                        </tr>
+
+              </table>
+  </div>
+</body>
+</html>

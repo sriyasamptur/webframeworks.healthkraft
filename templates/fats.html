@@ -1,0 +1,504 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+<style><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;height:2000px;}
+
+.navbar {
+    overflow: hidden;
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+	}
+
+.navbar a {
+    float: right;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+.login {
+    overflow: hidden;
+    background-color: black;
+    font-family: arial;
+	font-size=10px;
+
+}
+
+.login a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.logo {
+    overflow: hidden;
+    background-color: black;
+    font-family: serif;
+	font-size=10px;
+
+}
+
+.logo a {
+    float: left;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,.dropdown:hover .dropbtn {
+    background-color:#3cb371;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align:middle}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1900px;
+  position: relative;
+  margin: auto;
+  background-size: 300px 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+   background-size: 300px 100px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.container {
+   position: relative;
+    text-align: center;
+    color: black;
+	
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+} 
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+</style>
+
+
+-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1 {
+    font-size: 40px;
+	font-style:sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+	font-style:sans-serif;
+}
+
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+  position: relative;
+  width: 45%; 
+  margin-left: auto;
+        margin-right: auto;
+
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+ img {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+     
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-style:sans-serif;
+  position:relative;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  }
+</style>
+</style>
+</head>
+<body bgcolor="	F9F3F3">
+
+<!--
+<div class="logo">
+  <a href="#logo">Healthkraft</a>
+  </div>
+<div class="navbar">
+<a href="login_new.html">Login</a>
+<a href="#signup">Sign In</a>  
+  <div class="dropdown">
+    <button class="dropbtn">Healthy Diet
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="atkins.html">Atkins</a>
+      <a href="#keto">Keto</a>
+      <a href="#vegan">Vegan</a>
+	</div>
+</div>
+<a href="#eating well">Food Essentials</a>
+<a href="#news">Nutrition Calculators </a>
+<div class="dropdown">
+    <button class="dropbtn">Health Recipe
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="salads.html">Salad</a>
+      <a href="soups.html">Soups</a>
+      <a href="smoothies.html">Smoothies</a>
+	</div>
+</div>
+<a href="#home">Home</a>
+	
+</div>
+-->
+
+
+
+<h1><center><font size=32 style="sans-serif">FATS</font></center></h1>
+
+ 
+<p><font size="4.5"style="sans-serif">When you consider that our brains are more than two-thirds fat, and that our brain cell membranes are made of Essential Fatty Acids (EFAs),
+ it’s easy to see that our cognitive abilities depend on adequate and quality fat intake. </br>But beyond this fats provide nutrition that are essential for :
+Growth,Energy,Brain and other vital organ function,Metabolism,Hormone health,healthy skin, eyes, and bones,Reproductive health.
+</font></p>
+
+  
+  
+
+<h2><font style="sans-serif">HEALTHY FAT CONTAINING FOODS</font><h2>
+<h2><center>AVACADO</center></h2>
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/ava.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>Avocados are about 77% fat, by calories, making them even higher in fat than most animal foods.
+
+The main fatty acid is a monounsaturated fat called oleic acid. This is also the predominant fatty acid in olive oil, associated with various health benefits.</p>
+
+
+</div>
+  </div>
+</div>
+<h2><center>DARK CHOCOLATE</center></h2>
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/dc.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>Dark chocolate is one of those rare health foods that actually taste incredible.
+
+It is very high in fat, with fat at around 65% of calories.
+
+Dark chocolate is 11% fiber and contains over 50% of the RDA for iron, magnesium, copper and manganese</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>EGGS</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/ef.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>A single egg contains 212 mg of cholesterol, which is 71% of the recommended daily intake. Plus, 62% of the calories in whole eggs are from fat (</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>FISH</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/ff.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p> Fishes like salmon, trout, mackerel, sardines and herring loaded with heart-healthy omega-3 fatty acids, high quality proteins and all sorts of important nutrients.
+great addition to your diet. The amount of protein in chickpeas is similar to eggs, which contain 6-7g per egg, so add it to your salads, stews and curry.
+</p>
+</div>
+  </div>
+</div>
+
+
+<h2><center>NUTS</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/nuts.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text"><h3>
+<p>Healthy nuts include almonds, walnuts, macadamia nuts and numerous others.They are high in healthy fats and fiber.</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>CHIA SEEDS</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/cs.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>An ounce (28 grams) of chia seeds actually contains 9 grams of fat.
+
+Considering that almost all the carbs in chia seeds are fiber, the majority of calories in them actually comes from fat.
+
+In fact, by calories, chia seeds are around 80% fat. This makes them an excellent high-fat plant food.</p>
+
+
+</div>
+  </div>
+</div>
+<h2><center>OLIVE OIL</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/oo.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>Another fatty food that almost everyone agrees is healthy, is olive oil.This fat is an essential component of the Mediterranean diet, which has been shown to have numerous health benefits </p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>COCONUTS AND COCONUT OIL</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/co.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>Coconuts, and coconut oil, are the richest sources of saturated fat on the planet.
+
+In fact, about 90% of the fatty acids in them are saturated.</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>FULL FAT YOGURT</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/yogurt.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>Real, full-fat yogurt is incredibly healthy.
+
+It has all the same important nutrients as other high-fat dairy products.
+
+But it's also loaded with healthy, probiotic bacteria, that can have powerful effects on your health.</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>CHEESE</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/chh.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<p>Cheese, like other high-fat dairy products, also contains powerful fatty acids that have been linked to all sorts of benefits.</p
+>
+
+</div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

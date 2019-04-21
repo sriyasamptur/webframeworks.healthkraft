@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Login Form{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'healthkraft/css/style.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body background="{% static 'healthkraft/images/login.jpg' %}">
+	<div class="loginbox">
+<img src="{% static 'healthkraft/images/avatar.png' %}" class="avtar">
+  <main>
+  	{% if messages %}
+  		{% for message in messages %}
+  			<div class="alert alert-{{ messages.tags }}">
+  				{{ message }}
+  			</div>
+  		{% endfor %}
+  	{% endif %}
+    {% block content %}
+    {% endblock %}
+  </main>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,539 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>carb</title>
+
+
+
+<!--
+<style><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;height:2000px;}
+
+.navbar {
+    overflow: hidden;
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+	}
+
+.navbar a {
+    float: right;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+.login {
+    overflow: hidden;
+    background-color: black;
+    font-family: arial;
+	font-size=10px;
+
+}
+
+.login a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.logo {
+    overflow: hidden;
+    background-color: black;
+    font-family: serif;
+	font-size=10px;
+
+}
+
+.logo a {
+    float: left;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,.dropdown:hover .dropbtn {
+    background-color:#3cb371;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align:middle}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1900px;
+  position: relative;
+  margin: auto;
+  background-size: 300px 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+   background-size: 300px 100px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.container {
+   position: relative;
+    text-align: center;
+    color: black;
+	
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+} 
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1 {
+    font-size: 40px;
+	font-style:sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+	font-style:sans-serif;
+}
+
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+  position: relative;
+  width: 45%; 
+  margin-left: auto;
+        margin-right: auto;
+
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+ img {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+     
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-style:sans-serif;
+  position:relative;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  }
+</style>
+</head>
+<body bgcolor="F9F3F3">
+
+<!--
+<div class="logo">
+  <a href="#logo">Healthkraft</a>
+  </div>
+<div class="navbar">
+<a href="login_new.html">Login</a>
+<a href="#signup">Sign In</a>  
+  <div class="dropdown">
+    <button class="dropbtn">Healthy Diet
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="atkins.html">Atkins</a>
+      <a href="#keto">Keto</a>
+      <a href="#vegan">Vegan</a>
+	</div>
+</div>
+<a href="#eating well">Food Essentials</a>
+<a href="#news">Nutrition Calculators </a>
+<div class="dropdown">
+    <button class="dropbtn">Health Recipe
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	<a href="salads.html">Salad</a>
+      <a href="soups.html">Soups</a>
+      <a href="smoothies.html">Smoothies</a>
+	</div>
+</div>
+<a href="#home">Home</a>
+	
+</div>
+
+
+-->
+
+
+<h1><center><font size=32 style="sans-serif">CARBOHYDRATES</font></center></h1>
+<p><font size="4.5">Carbohydrates are naturally occurring sugars, starches and fiber in food.All carbohydrates are made up of sugar molecules. Sugar molecules linked together
+ form starches and fiber.
+In the body, starches and sugars are broken down in the digestive system to glucose.Glucose is the fuel that provides energy and powers all of the body’s functions.
+ Glucose is also called blood sugar.
+Dietary fiber is a form of carbohydrate that is not broken down during digestion. It passes through the stomach, small intestine, colon and then out of the body.
+Scientists and dietitians used to group carbohydrates into two types: complex carbohydrates and simple carbohydrates.Complex carbohydrates include starches and 
+fiber. Simple carbohydrates include sugar that occurs naturally in fruits, vegetables and milk as well as brown sugar, white sugar, honey and any sugar added to 
+foods during processing.
+They are the main source of energy to the body and therefore should be taken in enough amount.</font> </p>
+
+ 
+  
+
+<h2>CARBOHYDRATES CONTAINING FOODS<h2>
+<h2><center>QUINOA</center></h2>
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/Q.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text"><h3><center>quinoa</center></h3>
+<p>It is classified as a pseudocereal, a seed that is prepared and eaten like a grain.
+
+Cooked quinoa is 21.3% carbs, making it a high-carb food. . It has been linked to health benefits including improved blood sugar control also
+</p>
+</div>
+  </div>
+</div>
+<h2><center>OATS</center></h2>
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/OA.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Oats</center></h3>
+<p>Oats may be the healthiest whole grain food on the planet.
+
+They are a great source of many vitamins, minerals and antioxidants.
+
+Raw oats contain 66% carbs, nearly 11% of which is fiber. They are particularly high in a powerful soluble fiber called oat beta-glucan.
+</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>BANANAS</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/BA.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Bananas</center></h3>
+<p>Bananas are among the world's most popular fruits.
+
+They are made up of about 23% carbs, either in the form of starches or sugars.
+
+Unripe, green bananas are higher in starches, which transform into natural sugars as the bananas ripen, turning yellow in the process.
+</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>SWEET POTATOES</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/SP.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Sweet potatoes</center></h3>
+<p>Sweet potatoes are a delicious, nutritious tuber.
+
+Cooked sweet potatoes contain about 18–21% carbs. This carb content consists of starch, sugar and fiber.
+
+Sweet potatoes are a rich source of provitamin A, vitamin C and potassium as well.
+</div>
+  </div>
+</div>
+
+
+<h2><center>BUCKWHEAT</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/b.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text"><h3>
+<h3><center>Buckwheat</center></h3>
+<p>Buckwheat is also a pseudocereal.
+Despite the name, buckwheat is not related to wheat and does not contain gluten.
+Raw buckwheat contains 71.5% carbs, while cooked buckwheat groats contain about 20% carbs.</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>BLUEBERRIES</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/BU.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Blueberries</center></h3>
+<p>Blueberries are incredibly delicious.
+
+They are frequently marketed as a superfood due to their high amounts of plant compounds and antioxidants.
+
+They consist mostly of water as well as about 14.5% carbs.</p>
+
+
+</div>
+  </div>
+</div>
+<h2><center>KIDNEY BEANS</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/KB.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Kidney beans </center></h3>
+<p>Kidney beans are a variety of the common bean. They are part of the legume family.
+
+Cooked kidney beans contain 22.8% carbs in the form of starches and fiber. They are also high in protein.</p>
+
+</div>
+  </div>
+</div>
+
+<h2><center>APPLES</center></h2>
+
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/A.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Apples</center></h3>
+<p>Apples are a popular fruit with a sweet flavor and a distinctive crunchy texture.
+
+They are available in many colors, sizes and flavors, all of which generally contain 13–15% carbs.</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>BEETROOTS</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/BEAT.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Beetroots</center></h3>
+<p>Beetroots are a purple root vegetable, commonly referred to as beets.
+
+Raw and cooked beets contain about 8–10% carbs, mainly from sugar and fiber.</p>
+
+
+</div>
+  </div>
+</div>
+
+<h2><center>ORANGES</center></h2>
+
+<div class="container">
+  <center><img src="{% static 'healthkraft/images/O.jpg' %}" alt="Avatar" class="image" class="center"></center>
+  <div class="overlay">
+    <div class="text">
+<h3><center>Oranges</center></h3>
+<p>Oranges are among the world’s most popular fruits.
+
+They are mainly composed of water and contain 11.8% carbs. Oranges are also a good source of fiber.</p
+>
+
+</div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
